@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import moment from "moment";
+
 
 function App() {
+  let timer = moment(new Date()).format("DD/MM/YYYY hh:mm:ss");
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,9 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+          <p>Current Date And Time: {timer}</p>
+        </div>
       </header>
     </div>
   );
